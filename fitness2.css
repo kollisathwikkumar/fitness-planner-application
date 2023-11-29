@@ -1,0 +1,522 @@
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left{
+    width: 50%;
+    height: 600px;
+    background:url()no-repeat center / cover;
+    border-radius: 8px;
+}
+.right{
+    width: 50%;
+    min-height: 400px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+    margin-left: -150px;
+}
+.right h1{
+    font-size: 40px;
+    font-weight: lighter;
+}
+.right p{
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 25px;
+}
+.right a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+.text{
+    padding-left: 20px;
+
+}
+.btn{
+    padding-left: 20px;
+
+}
+.satwik{
+    font-size: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      width: 100%;
+      margin: 0 20px;
+    }
+    .left {
+      width: 100%;
+      height: 400px;
+    }
+    .right {
+      width: 90%;
+      margin: 0;
+      margin-top: -100px;
+    }
+}
+/**/
+.container2{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left2{
+    width: 50%;
+    height: 600px;
+    background:url(images\ for\ diet\ menu\ 3.jpg) no-repeat center / cover;
+    border-radius: 8px;
+}
+.right2{
+    width: 50%;
+    min-height: 400px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+    margin-left: -150px;
+}
+.right2 h1{
+    font-size: 40px;
+    font-weight: lighter;
+}
+.right2 p{
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 25px;
+}
+.right2 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+.text2{
+    padding-left: 20px;
+
+}
+.btn2{
+    padding-left: 20px;
+
+}
+.satwik2{
+    font-size: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .container2 {
+      flex-direction: column;
+      width: 100%;
+      margin: 0 20px;
+    }
+    .left2 {
+      width: 100%;
+      height: 400px;
+    }
+    .right2 {
+      width: 90%;
+      margin: 0;
+      margin-top: -100px;
+    }
+}
+/**/
+.container3{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left3{
+    width: 50%;
+    height: 600px;
+    background:url(images\ for\ diet\ menu\ 4.png) no-repeat center / cover;
+    border-radius: 8px;
+}
+.right3{
+    width: 50%;
+    min-height: 400px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+    margin-left: -150px;
+}
+.right3 h1{
+    font-size: 40px;
+    font-weight: lighter;
+}
+.right3 p{
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 25px;
+}
+.right3 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+.text3{
+    padding-left: 20px;
+
+}
+.btn3{
+    padding-left: 20px;
+
+}
+.satwik3{
+    font-size: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .container3 {
+      flex-direction: column;
+      width: 100%;
+      margin: 0 20px;
+    }
+    .left3 {
+      width: 100%;
+      height: 400px;
+    }
+    .right3 {
+      width: 90%;
+      margin: 0;
+      margin-top: -100px;
+    }
+}
+/**/
+.container4{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left4{
+    width: 50%;
+    height: 600px;
+    background:url(images\ for\ diet\ menu\ 5.jpg) no-repeat center / cover;
+    border-radius: 8px;
+}
+.right4{
+    width: 50%;
+    min-height: 400px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+    margin-left: -150px;
+}
+.right4 h1{
+    font-size: 40px;
+    font-weight: lighter;
+}
+.right4 p{
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 25px;
+}
+.right4 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+.text4{
+    padding-left: 20px;
+
+}
+.btn4{
+    padding-left: 20px;
+
+}
+.satwik4{
+    font-size: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .container4 {
+      flex-direction: column;
+      width: 100%;
+      margin: 0 20px;
+    }
+    .left4 {
+      width: 100%;
+      height: 400px;
+    }
+    .right4 {
+      width: 90%;
+      margin: 0;
+      margin-top: -100px;
+    }
+}
+/**/
+.container5{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left5{
+    width: 50%;
+    height: 600px;
+    background:url(images\ for\ diet\ menu\ 6.png) no-repeat center / cover;
+    border-radius: 8px;
+}
+.right5{
+    width: 50%;
+    min-height: 400px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+    margin-left: -150px;
+}
+.right5 h1{
+    font-size: 40px;
+    font-weight: lighter;
+}
+.right5 p{
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 25px;
+}
+.right5 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+.text5{
+    padding-left: 20px;
+
+}
+.btn5{
+    padding-left: 20px;
+
+}
+.satwik5{
+    font-size: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .container5 {
+      flex-direction: column;
+      width: 100%;
+      margin: 0 20px;
+    }
+    .left5 {
+      width: 100%;
+      height: 400px;
+    }
+    .right5 {
+      width: 90%;
+      margin: 0;
+      margin-top: -100px;
+    }
+}
+/**/
+.container6{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left6{
+    width: 50%;
+    height: 600px;
+    background:url(images\ for\ diet\ menu\ 7.jpg) no-repeat center / cover;
+    border-radius: 8px;
+}
+.right6{
+    width: 50%;
+    min-height: 400px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+    margin-left: -150px;
+}
+.right6 h1{
+    font-size: 40px;
+    font-weight: lighter;
+}
+.right6 p{
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 25px;
+}
+.right6 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+.text6{
+    padding-left: 20px;
+
+}
+.btn6{
+    padding-left: 20px;
+
+}
+.satwik6{
+    font-size: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .container6 {
+      flex-direction: column;
+      width: 100%;
+      margin: 0 20px;
+    }
+    .left6 {
+      width: 100%;
+      height: 400px;
+    }
+    .right6 {
+      width: 90%;
+      margin: 0;
+      margin-top: -100px;
+    }
+}
+.body{
+    background-color: #08080856;
+}
+html{
+    font-family: 'Montserrat';
+}
+section{
+    min-height: 100hv;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #08080856;
+}
+
+/**/
+.container7{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left7{
+    width: 50%;
+    height: 600px;
+    background:url(images\ for\ diet\ menu\ 1\ .jpg) no-repeat center / cover;
+    border-radius: 8px;
+}
+.right7{
+    width: 50%;
+    min-height: 400px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+    margin-left: -150px;
+}
+.right7 h1{
+    font-size: 40px;
+    font-weight: lighter;
+}
+.right7 p{
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 25px;
+}
+.right7 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+.text7{
+    padding-left: 20px;
+
+}
+.btn7{
+    padding-left: 20px;
+
+}
+.satwik7{
+    font-size: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .container7 {
+      flex-direction: column;
+      width: 100%;
+      margin: 0 20px;
+    }
+    .left7 {
+      width: 100%;
+      height: 400px;
+    }
+    .right7 {
+      width: 90%;
+      margin: 0;
+      margin-top: -100px;
+    }
+}
+/**/
+body{
+    background-color: rgb(30, 21, 21);
+}

@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+display: flex;
+justify-content: center;
+position: relative;
+width: 100%;
+height: 100vh;
+}
+.content {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:350px auto;
+    display: flexbox;
+}
+.content h1{
+    font-size: 160px;
+    color: lavender;
+    font-weight: 600;
+}
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+
+}
+
+
+.vdo{
+    width: 640;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.bg{
+ width: 1800px;
+ height: 950px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;  
+}
+html{
+    font-family: 'Montserrat';
+}
+section{
+    min-height: 100hv;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #08080856;
+}
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left{
+    width: 50%;
+    height: 600px;
+    background:url(cooking-banner-kitchen-black-table-ingredients-food-top-view-free-space-your-text_187166-59583.avif) no-repeat center / cover;
+    border-radius: 8px;
+}
+.right{
+    width: 50%;
+    min-height: 400px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+    margin-left: -150px;
+}
+.right h1{
+    font-size: 40px;
+    font-weight: lighter;
+}
+.right p{
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 25px;
+}
+.right a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+.text{
+    padding-left: 20px;
+
+}
+.btn{
+    padding-left: 20px;
+
+}
+.satwik{
+    font-size: 10px;
+}
+@media only screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      width: 100%;
+      margin: 0 20px;
+    }
+    .left {
+      width: 100%;
+      height: 400px;
+    }
+    .right {
+      width: 90%;
+      margin: 0;
+      margin-top: -100px;
+    }
+}
+body{
+    background-color: #08080856;
+}
+html{
+    font-family: 'Montserrat';
+}
+section{
+    min-height: 100hv;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #08080856;
+}
+.container2{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left2{
+    width: 50%;
+    height: 600px;
+    background:url(vintage-old-rustic-cutlery-dark_1220-4886.avif) no-repeat center / cover;
+    border-radius: 8px;
+}
+.right2{
+    width: 50%;
+    min-height: 400px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+    margin-left: -150px;
+}
+.right2 h1{
+    font-size: 40px;
+    font-weight: lighter;
+}
+.right2 p{
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 25px;
+}
+.right2 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    padding: 20px 30px;
+    display: inline-block;
+    letter-spacing: 2px;
+}
+.text2{
+    padding-left: 20px;
+
+}
+.btn2{
+    padding-left: 20px;
+
+}
+@media only screen and (max-width: 768px) {
+    .container2 {
+      flex-direction: column;
+      width: 100%;
+      margin: 0 20px;
+    }
+    .left2 {
+      width: 100%;
+      height: 400px;
+    }
+    .right2 {
+      width: 90%;
+      margin: 0;
+      margin-top: -100px;
+    }
+}
+/**FITNESS HOME PAGE**/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+body{
+    background-image: url(imges\ for\ fitness.jpg);
+    background-size: cover;
+    background-repeat: none;
+    background-position: none;
+    background-attachment: none;
+}
+header{
+    width:100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 0 0 10px #000;
+    background: rgba(0,0,0,0.5);
+}
+#chk1{
+    display: none;
+     
+     
+}
+i{
+    color: lavender;
+    cursor: pointer;
+}
+header .logo{
+    flex: 1;
+    color: black;
+     
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+header .search-box{
+    flex: 1;
+    position: relative;
+}
+.search-box input{
+    width:100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background:lavender;
+    border-radius: 30px;
+    color:black;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 40px;
+    text-align: center;
+     
+}
+ 
+.search-box button{
+    cursor: pointer;
+    width:40px;
+    height: 40px;
+    border-radius: 30px;
+    border:none;
+    position: absolute;
+    top:0;
+    right: 0;
+    transform: scale(0.9);
+    background: lavender;
+    color: #fff;
+}
+header ul {
+    flex:2;
+    display: flex;
+    justify-content: space-evenly;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+header ul li a:hover{
+    border-bottom: 2px solid #e6e6fa;
+}
+header .menu{
+    font-size: 2.5em;
+    display: none;
+}
+@media(max-width:1000px){
+    .search-box button{
+        position: absolute;
+    }
+    header ul{
+        position: fixed;
+        top:100px;
+        right: -100%;
+        background: rgba(0,0,0,0.5);
+        height: calc(100vh - 100px);
+        width:50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+     
+    header .menu{
+        display: block;
+        width:100px;
+        text-align: center;
+    }
+    #chk1:checked ~ ul{
+        right: 0;
+        
+    }
+
+  
+}
+/**matter about home page **/
+.matter{
+    padding-top: 150px;
+    padding-left: 60px;
+    padding-right:  50px;
+    color: black;
+}
+.headingfitness{
+    padding-top: 100px;
+   
+}
