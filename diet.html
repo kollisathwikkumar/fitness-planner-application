@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FitFlow Diet Plans – Nutritious, balanced 7-day Indian meal plans for every goal.">
+  <title>Diet Plans – FitFlow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700;1,900&family=Barlow:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+  <div class="vt-left">FUEL · MACROS · PROTEIN · CARBS · HYDRATE · EAT CLEAN</div>
+  <div class="vt-right">FITFLOW · NUTRITION · BALANCE · PERFORMANCE · RECOVERY</div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="brand"><span class="brand-icon">⚡</span><span class="gradient-text">FitFlow</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="diet.html" class="active">Diet</a></li>
+        <li><a href="workouts.html">Workouts</a></li>
+        <li><a href="notes.html">My Sheet</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="workouts.html" class="nav-cta">Start Training</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="padding-top:var(--nav-h);">
+    <div class="page-hero-badge">🥗 Nutrition Hub</div>
+    <h1 class="reveal">Weekly <span class="gradient-text">Diet Plans</span></h1>
+    <p class="reveal" style="--delay:0.1s">Seven days of balanced, flavourful Indian meals — designed to fuel your workouts and daily performance.</p>
+  </section>
+
+  <!-- MACRO STRIP -->
+  <div style="background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+    <div style="max-width:var(--max-w);margin:0 auto;padding:28px 24px;display:flex;gap:0;align-items:stretch;flex-wrap:wrap;">
+      <div style="flex:1;text-align:center;padding:16px 24px;border-right:1px solid var(--border);min-width:140px;">
+        <div style="font-family:var(--font-d);font-size:1.8rem;font-weight:900;color:var(--red2);line-height:1;margin-bottom:4px;">~2200</div>
+        <div style="font-family:var(--font-d);font-size:0.68rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);">Avg Calories / Day</div>
+      </div>
+      <div style="flex:1;text-align:center;padding:16px 24px;border-right:1px solid var(--border);min-width:140px;">
+        <div style="font-family:var(--font-d);font-size:1.8rem;font-weight:900;color:var(--red2);line-height:1;margin-bottom:4px;">140g+</div>
+        <div style="font-family:var(--font-d);font-size:0.68rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);">Daily Protein</div>
+      </div>
+      <div style="flex:1;text-align:center;padding:16px 24px;border-right:1px solid var(--border);min-width:140px;">
+        <div style="font-family:var(--font-d);font-size:1.8rem;font-weight:900;color:var(--red2);line-height:1;margin-bottom:4px;">4</div>
+        <div style="font-family:var(--font-d);font-size:0.68rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);">Meals Per Day</div>
+      </div>
+      <div style="flex:1;text-align:center;padding:16px 24px;min-width:140px;">
+        <div style="font-family:var(--font-d);font-size:1.8rem;font-weight:900;color:var(--red2);line-height:1;margin-bottom:4px;">7</div>
+        <div style="font-family:var(--font-d);font-size:0.68rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);">Days Planned</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TABS -->
+  <div class="diet-tabs">
+    <div class="diet-tabs-inner">
+      <button class="tab-btn active" data-day="mon">Monday</button>
+      <button class="tab-btn" data-day="tue">Tuesday</button>
+      <button class="tab-btn" data-day="wed">Wednesday</button>
+      <button class="tab-btn" data-day="thu">Thursday</button>
+      <button class="tab-btn" data-day="fri">Friday</button>
+      <button class="tab-btn" data-day="sat">Saturday</button>
+      <button class="tab-btn" data-day="sun">Sunday</button>
+    </div>
+  </div>
+
+  <!-- PANELS -->
+  <div class="diet-panels">
+
+    <!-- MONDAY -->
+    <div class="day-panel active" id="day-mon">
+      <div class="day-panel-header reveal">
+        <div class="red-line"></div>
+        <h2>Monday <span class="gradient-text">Meal Plan</span></h2>
+        <p>Start the week strong — balanced carbs, clean protein, and energising spices.</p>
+      </div>
+      <div class="meals-grid">
+        <div class="meal-card reveal" style="--delay:0.05s">
+          <span class="meal-emoji">🌅</span>
+          <div class="meal-time">Breakfast · 7–8 AM</div>
+          <h4>Masala Oats / Poha</h4>
+          <p>Masala oats or flattened rice cooked with spices, green peas, mustard seeds, served with a cup of masala chai.</p>
+          <div class="meal-tags"><span class="meal-tag">Complex Carbs</span><span class="meal-tag">~400 kcal</span></div>
+        </div>
+        <div class="meal-card reveal" style="--delay:0.1s">
+          <span class="meal-emoji">☀️</span>
+          <div class="meal-time">Lunch · 12–1 PM</div>
+          <h4>Dal Roti with Sabzi</h4>
+          <p>Whole wheat roti with protein-rich lentil dal and a side of mixed vegetable sabzi. Filling and nutritious.</p>
+          <div class="meal-tags"><span class="meal-tag">High Protein</span><span class="meal-tag">Fibre</span><span class="meal-tag">~650 kcal</span></div>
+        </div>
+        <div class="meal-card reveal" style="--delay:0.15s">
+          <span class="meal-emoji">🍎</span>
+          <div class="meal-time">Snack · 4–5 PM</div>
+          <h4>Fruit Chaat</h4>
+          <p>Fresh seasonal fruit chaat with a sprinkle of chaat masala and lemon juice — natural sugars and vitamins.</p>
+          <div class="meal-tags"><span class="meal-tag">Natural Sugar</span><span class="meal-tag">Vitamins</span><span class="meal-tag">~180 kcal</span></div>
+        </div>
+        <div class="meal-card reveal" style="--delay:0.2s">
+          <span class="meal-emoji">🌙</span>
+          <div class="meal-time">Dinner · 7–8 PM</div>
+          <h4>Tandoori Chicken / Paneer</h4>
+          <p>Grilled chicken or cottage cheese with brown rice and a refreshing cucumber raita. High protein, low fat.</p>
+          <div class="meal-tags"><span class="meal-tag">High Protein</span><span class="meal-tag">Lean</span><span class="meal-tag">~700 kcal</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TUESDAY -->
+    <div class="day-panel" id="day-tue">
+      <div class="day-panel-header reveal">
+        <div class="red-line"></div>
+        <h2>Tuesday <span class="gradient-text">Meal Plan</span></h2>
+        <p>Light on the stomach, high on nutrition — keep the momentum going.</p>
+      </div>
+      <div class="meals-grid">
+        <div class="meal-card reveal" style="--delay:0.05s">
+          <span class="meal-emoji">🌅</span>
+          <div class="meal-time">Breakfast · 7–8 AM</div>
+          <h4>Poha with Peas</h4>
+          <p>Poha cooked with green peas, mustard seeds, curry leaves, and turmeric. Served with masala chai or green tea.</p>
+          <div class="meal-tags"><span class="meal-tag">Light Carbs</span><span class="meal-tag">Iron-Rich</span><span class="meal-tag">~380 kcal</span></div>
+        </div>
+        <div class="meal-card reveal" style="--delay:0.1s">
+          <span class="meal-emoji">☀️</span>
+          <div class="meal-time">Lunch · 12–1 PM</div>
+          <h4>Roti, Dal & Curd</h4>
+          <p>Whole wheat roti with dal, mixed vegetable sabzi, and a small bowl of curd for probiotics and protein.</p>
+          <div class="meal-tags"><span class="meal-tag">Probiotics</span><span class="meal-tag">Protein</span><span class="meal-tag">~620 kcal</span></div>
+        </div>
+        <div class="meal-card reveal" style="--delay:0.15s">
+          <span class="meal-emoji">🌿</span>
+          <div class="meal-time">Snack · 4–5 PM</div>
+          <h4>Sprouts Chaat</h4>
+          <p>Protein-packed sprouted lentils with chopped tomatoes, onions, and a generous squeeze of fresh lemon.</p>
+          <div class="meal-tags"><span class="meal-tag">High Protein</span><span class="meal-tag">Raw</span><span class="meal-tag">~160 kcal</span></div>
+        </div>
+        <div class="meal-card reveal" style="--delay:0.2s">
+          <span class="meal-emoji">🌙</span>
+          <div class="meal-time">Dinner · 7–8 PM</div>
+          <h4>Grilled Fish / Paneer</h4>
+          <p>Grilled fish or paneer with quinoa or brown rice and steamed broccoli-carrot salad for micronutrients.</p>
+          <div class="meal-tags"><span class="meal-tag">Omega-3</span><span class="meal-tag">Lean Protein</span><span class="meal-tag">~680 kcal</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- WEDNESDAY -->
+    <div class="day-panel" id="day-wed">
+      <div class="day-panel-header reveal">
+        <div class="red-line"></div>
+        <h2>Wednesday <span class="gradient-text">Meal Plan</span></h2>
+        <p>Midweek reset — clean, energising foods to power through the week.</p>
+      </div>
+      <div class="meals-grid">
+        <div class="meal-card reveal" style="--delay:0.05s">
+          <span class="meal-emoji">🌅</span>
+          <div class="meal-time">Breakfast · 7–8 AM</div>
+          <h4>Oats Porridge</h4>
+          <p>1 cup oats porridge with skimmed milk, topped with walnuts for healthy fats and brain fuel.</p>
+          <div class="meal-tags"><span class="meal-tag">Slow Carbs</span><span class="meal-tag">Healthy Fats</span><span class="meal-tag">~420 kcal</span></div>
+        </div>
+        <div class="meal-card reveal" style="--delay:0.1s">
+          <span class="meal-emoji">☀️</span>
+          <div class="meal-time">Lunch · 12–1 PM</div>
+          <h4>Methi Dal & Rice</h4>
+          <p>Thick methi (fenugreek) or palak dal with steamed rice — blood sugar friendly and deeply nutritious.</p>
+          <div class="meal-tags"><span class="meal-tag">Anti-Inflammatory</span><span class="meal-tag">Iron</span><span class="meal-tag">~600 kcal</span></div>
+        </div>
+        <div class="meal-card reveal" style="--delay:0.15s">
+          <span class="meal-emoji">🥛</span>
+          <div class="meal-time">Snack · 4–5 PM</div>
+          <h4>Hung Curd with Apple</h4>
+          <p>Protein-rich hung curd with sliced apple and a cup of chai. Calcium + natural fibre combo.</p>
+          <div class="meal-tags"><span class="meal-tag">Protein</span><span class="meal-tag">Calcium</span><span class="meal-tag">~200 kcal</span></div>
+        </div>
+        <div class="meal-card reveal" style="--delay:0.2s">
+          <span class="meal-emoji">🌙</span>
+          <div class="meal-time">Dinner · 7–8 PM</div>
+          <h4>Grilled Chicken / Tofu</h4>
+          <p>Lean grilled chicken or tofu for vegetarians with a colourful mixed vegetable salad.</p>
+          <div class="meal-tags"><span class="meal-tag">Lean Protein</span><span class="meal-tag">Low Carb</span><span class="meal-tag">~620 kcal</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- THURSDAY -->
+    <div class="day-panel" id="day-thu">
+      <div class="day-panel-header reveal">
+        <div class="red-line"></div>
+        <h2>Thursday <span class="gradient-text">Meal Plan</span></h2>
+        <p>Bold flavours, big nutrition — push through to the weekend.</p>
+      </div>
+      <div class="meals-grid">
+        <div class="meal-card reveal" style="--delay:0.05s">
+          <span class="meal-emoji">🌅</span>
+          <div class="meal-time">Breakfast · 7–8 AM</div>
+          <h4>Curd Sandwich</h4>
+          <p>Quick sandwich with hung curd, chopped vegetables, and spices — high-protein, fast to make.</p>
+          <div class="meal-tags"><span class="meal-tag">High Protein</span><span class="meal-tag">Quick Prep</span><span class="meal-tag">~380 kcal</span></div>
+        </div>
+        <div class="meal-card reveal" style="--delay:0.1s">
+          <span class="meal-emoji">☀️</span>
+          <div class="meal-time">Lunch · 12–1 PM</div>
+          <h4>Amritsari Chana & Rice</h4>
+          <p>Chickpeas in spicy Punjabi gravy with steamed rice, papad, and fresh green salad. Classic and powerful.</p>
+          <div class="meal-tags"><span class="meal-tag">Plant Protein</span><span class="meal-tag">Fibre</span><span class="meal-tag">~670 kcal</span></div>
+        </div>
+        <div class="meal-card reveal" style="--delay:0.15s">
+          <span class="meal-emoji">🌿</span>
+          <div class="meal-time">Snack · 4–5 PM</div>
+          <h4>Sprouts Chaat</h4>
+          <p>Sprouted lentils with tomatoes, onions, and lemon — light, refreshing, and energising pre-dinner.</p>
+          <div class="meal-tags"><span class="meal-tag">Raw Protein</span><span class="meal-tag">Enzymes</span><span class="meal-tag">~160 kcal</span></div>
+        </div>
+        <div class="meal-card reveal" style="--delay:0.2s">
+          <span class="meal-emoji">🌙</span>
+          <div class="meal-time">Dinner · 7–8 PM</div>
+          <h4>Vegetable Manchurian</h4>
+          <p>Indo-Chinese mixed vegetable Manchurian in tangy sauce, served with roti or noodles — a flavourful end.</p>
+          <div class="meal-tags"><span class="meal-tag">Vegetables</span><span class="meal-tag">Antioxidants</span><span class="meal-tag">~580 kcal</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FRIDAY -->
+    <div class="day-panel" id="day-fri">
+      <div class="day-panel-header reveal">
+        <div class="red-line"></div>
+        <h2>Friday <span class="gradient-text">Meal Plan</span></h2>
+        <p>Fuel up properly — the weekend is almost here. Eat for performance.</p>
+      </div>
+      <div class="meals-grid">
+        <div class="meal-card reveal" style="--delay:0.05s">
+          <span class="meal-emoji">🌅</span>
+          <div class="meal-time">Breakfast · 7–8 AM</div>
+          <h4>Oatmeal with Berries</h4>
+          <p>Nutritious bowl of oatmeal topped with fresh berries or sliced banana for natural sweetness and antioxidants.</p>
+          <div class="meal-tags"><span class="meal-tag">Antioxidants</span><span class="meal-tag">Slow Release</span><span class="meal-tag">~410 kcal</span></div>
+        </div>
+        <div class="meal-card reveal" style="--delay:0.1s">
+          <span class="meal-emoji">☀️</span>
+          <div class="meal-time">Lunch · 12–1 PM</div>
+          <h4>Vegetable Biryani</h4>
+          <p>Aromatic biryani with mixed vegetables and basmati rice, served with cooling cucumber raita.</p>
+          <div class="meal-tags"><span class="meal-tag">Complex Carbs</span><span class="meal-tag">Spices</span><span class="meal-tag">~680 kcal</span></div>
+        </div>
+        <div class="meal-card reveal" style="--delay:0.15s">
+          <span class="meal-emoji">🥜</span>
+          <div class="meal-time">Snack · 4–5 PM</div>
+          <h4>Mixed Nuts & Fruit</h4>
+          <p>A handful of almonds, walnuts, and a piece of seasonal fruit for sustained energy and healthy fats.</p>
+          <div class="meal-tags"><span class="meal-tag">Healthy Fats</span><span class="meal-tag">Omega-3</span><span class="meal-tag">~220 kcal</span></div>
+        </div>
+        <div class="meal-card reveal" style="--delay:0.2s">
+          <span class="meal-emoji">🌙</span>
+          <div class="meal-time">Dinner · 7–8 PM</div>
+          <h4>Lentil Dal & Roti</h4>
+          <p>Protein-rich dal with essential nutrients, served with whole wheat roti or brown rice for a wholesome close.</p>
+          <div class="meal-tags"><span class="meal-tag">Plant Protein</span><span class="meal-tag">Iron</span><span class="meal-tag">~630 kcal</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SATURDAY -->
+    <div class="day-panel" id="day-sat">
+      <div class="day-panel-header reveal">
+        <div class="red-line"></div>
+        <h2>Saturday <span class="gradient-text">Meal Plan</span></h2>
+        <p>Weekend warrior fuel — treat yourself right. You earned it.</p>
+      </div>
+      <div class="meals-grid">
+        <div class="meal-card reveal" style="--delay:0.05s">
+          <span class="meal-emoji">🌅</span>
+          <div class="meal-time">Breakfast · 8–9 AM</div>
+          <h4>Vegetable Upma</h4>
+          <p>Savoury roasted semolina with mixed vegetables and spices, paired with green tea. Satisfying and light.</p>
+          <div class="meal-tags"><span class="meal-tag">Complex Carbs</span><span class="meal-tag">Vitamins</span><span class="meal-tag">~420 kcal</span></div>
+        </div>
+        <div class="meal-card reveal" style="--delay:0.1s">
+          <span class="meal-emoji">☀️</span>
+          <div class="meal-time">Lunch · 1–2 PM</div>
+          <h4>Palak Paneer & Brown Rice</h4>
+          <p>Classic spinach and cottage cheese curry with brown rice, cucumber raita, and fresh salad.</p>
+          <div class="meal-tags"><span class="meal-tag">High Protein</span><span class="meal-tag">Iron-Rich</span><span class="meal-tag">~700 kcal</span></div>
+        </div>
+        <div class="meal-card reveal" style="--delay:0.15s">
+          <span class="meal-emoji">🍉</span>
+          <div class="meal-time">Snack · 4–5 PM</div>
+          <h4>Fruit Salad</h4>
+          <p>Refreshing mix of watermelon, pineapple, and grapes for hydration, vitamins, and natural energy.</p>
+          <div class="meal-tags"><span class="meal-tag">Hydrating</span><span class="meal-tag">Vitamins</span><span class="meal-tag">~160 kcal</span></div>
+        </div>
+        <div class="meal-card reveal" style="--delay:0.2s">
+          <span class="meal-emoji">🌙</span>
+          <div class="meal-time">Dinner · 7–8 PM</div>
+          <h4>Grilled Salmon & Quinoa</h4>
+          <p>Lean grilled fish with flavourful quinoa pulao and masoor dal for a protein-packed recovery close.</p>
+          <div class="meal-tags"><span class="meal-tag">Omega-3</span><span class="meal-tag">Complete Protein</span><span class="meal-tag">~720 kcal</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUNDAY -->
+    <div class="day-panel" id="day-sun">
+      <div class="day-panel-header reveal">
+        <div class="red-line"></div>
+        <h2>Sunday <span class="gradient-text">Meal Plan</span></h2>
+        <p>Rest, recover, and nourish — prep your body for the week ahead.</p>
+      </div>
+      <div class="meals-grid">
+        <div class="meal-card reveal" style="--delay:0.05s">
+          <span class="meal-emoji">🌅</span>
+          <div class="meal-time">Breakfast · 8–9 AM</div>
+          <h4>Masala Oats</h4>
+          <p>Rolled oats with spices, onions, tomatoes, and green peas — a nutritious low-calorie start to the recovery day.</p>
+          <div class="meal-tags"><span class="meal-tag">Low Calorie</span><span class="meal-tag">Fibre</span><span class="meal-tag">~380 kcal</span></div>
+        </div>
+        <div class="meal-card reveal" style="--delay:0.1s">
+          <span class="meal-emoji">☀️</span>
+          <div class="meal-time">Lunch · 1–2 PM</div>
+          <h4>Palak Paneer & Brown Rice</h4>
+          <p>Popular spinach-paneer dish with a side of brown rice and cooling cucumber raita — Sunday classic.</p>
+          <div class="meal-tags"><span class="meal-tag">Protein</span><span class="meal-tag">Calcium</span><span class="meal-tag">~680 kcal</span></div>
+        </div>
+        <div class="meal-card reveal" style="--delay:0.15s">
+          <span class="meal-emoji">🌿</span>
+          <div class="meal-time">Snack · 4–5 PM</div>
+          <h4>Sprouts Chaat</h4>
+          <p>Sprouted lentils with chopped onions, tomatoes, and chaat masala — light, refreshing, and packed with nutrients.</p>
+          <div class="meal-tags"><span class="meal-tag">Raw Protein</span><span class="meal-tag">Enzymes</span><span class="meal-tag">~155 kcal</span></div>
+        </div>
+        <div class="meal-card reveal" style="--delay:0.2s">
+          <span class="meal-emoji">🌙</span>
+          <div class="meal-time">Dinner · 7–8 PM</div>
+          <h4>Grilled Fish Fillet</h4>
+          <p>Herb and lemon marinated salmon or tilapia, grilled to perfection and served with steamed vegetables.</p>
+          <div class="meal-tags"><span class="meal-tag">Omega-3</span><span class="meal-tag">Lean</span><span class="meal-tag">~640 kcal</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- LOG TO SHEET CTA -->
+  <div style="background:var(--bg2);border-top:1px solid var(--border);padding:60px 24px;text-align:center;">
+    <div style="max-width:600px;margin:0 auto;" class="reveal">
+      <div class="section-tag" style="margin-bottom:16px;">Track Your Nutrition</div>
+      <h2 style="font-family:var(--font-d);font-size:2rem;font-weight:900;text-transform:uppercase;margin-bottom:12px;">Log Your Diet Notes</h2>
+      <p style="color:var(--muted);margin-bottom:28px;font-size:0.95rem;line-height:1.7;">Use the Fitness Self Sheet to track what you eat, note how you feel, and review your weekly nutrition progress.</p>
+      <a href="notes.html" class="btn-primary">Open My Sheet →</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand"><span>⚡</span> FitFlow<p>Your premium fitness companion.</p></div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="diet.html">Diet</a>
+        <a href="workouts.html">Workouts</a>
+        <a href="notes.html">My Sheet</a>
+        <a href="about.html">About</a>
+      </div>
+      <p class="footer-copy">© 2025 FitFlow · Made with ❤️ for a stronger world.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.163.0/build/three.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

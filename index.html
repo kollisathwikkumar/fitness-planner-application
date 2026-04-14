@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FitFlow – Premium fitness planner. Science-backed workouts, 7-day meal plans, and performance tools.">
+  <title>FitFlow – Train Harder. Live Better.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700;1,900&family=Barlow:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Vertical Decorative Text -->
+  <div class="vt-left">STRENGTH · ENDURANCE · POWER · SPEED · DISCIPLINE</div>
+  <div class="vt-right">FITFLOW · TRAIN HARD · EAT SMART · RECOVER · REPEAT</div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="brand"><span class="brand-icon">⚡</span><span class="gradient-text">FitFlow</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="diet.html">Diet</a></li>
+        <li><a href="workouts.html">Workouts</a></li>
+        <li><a href="notes.html">My Sheet</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="workouts.html" class="nav-cta">Start Training</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-decor top-left">PUSH</div>
+    <div class="hero-decor bottom-right">HARDER</div>
+    <div class="hero-content reveal">
+      <div class="hero-badge">🏆 #1 Fitness Planner · 100% Free</div>
+      <h1 class="hero-title">
+        <span class="line-sm">Elevate Your</span>
+        <span class="gradient-text">Performance.</span>
+      </h1>
+      <p class="hero-sub">Science-backed workouts. Personalised diet plans. A fitness journal built for real results — all in one powerful platform.</p>
+      <div class="hero-actions">
+        <a href="workouts.html" class="btn-primary">▶ Start Training</a>
+        <a href="diet.html" class="btn-ghost">Explore Diet Plans</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">50+</span>
+          <span class="stat-label">Exercises</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">7</span>
+          <span class="stat-label">Day Meal Plans</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">∞</span>
+          <span class="stat-label">Notes & Drafts</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Free</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="benefits" id="benefits">
+    <div class="section-wrapper">
+      <div class="section-tag reveal">Why FitFlow?</div>
+      <h2 class="section-title reveal">Built for <span class="gradient-text">Results</span></h2>
+      <p class="section-sub reveal">Everything you need to transform your body — backed by science, built for everyday athletes.</p>
+
+      <div class="benefits-grid">
+        <div class="benefit-card reveal" style="--delay:0.05s">
+          <div class="benefit-icon">🧠</div>
+          <h3>Mood & Mental Clarity</h3>
+          <p>10–30 minutes of exercise slashes depression and anxiety. Endorphins make you unstoppable — every single day.</p>
+        </div>
+        <div class="benefit-card reveal" style="--delay:0.1s">
+          <div class="benefit-icon">🔥</div>
+          <h3>Burn Fat. Keep Muscle.</h3>
+          <p>Combine aerobic and resistance training to maximise fat loss while protecting and building lean muscle mass.</p>
+        </div>
+        <div class="benefit-card reveal" style="--delay:0.15s">
+          <div class="benefit-icon">💪</div>
+          <h3>Stronger Bones & Muscle</h3>
+          <p>Regular resistance training builds bone density and fights the muscle loss that comes naturally with aging.</p>
+        </div>
+        <div class="benefit-card reveal" style="--delay:0.2s">
+          <div class="benefit-icon">⚡</div>
+          <h3>Skyrocket Your Energy</h3>
+          <p>Aerobic conditioning strengthens your cardiovascular system so every workout feels more powerful than the last.</p>
+        </div>
+        <div class="benefit-card reveal" style="--delay:0.25s">
+          <div class="benefit-icon">🛡️</div>
+          <h3>Beat Chronic Disease</h3>
+          <p>Physical activity slashes risk of type 2 diabetes, heart disease, and several cancers. Prevention starts today.</p>
+        </div>
+        <div class="benefit-card reveal" style="--delay:0.3s">
+          <div class="benefit-icon">🌙</div>
+          <h3>Deep, Restorative Sleep</h3>
+          <p>Exercise helps you fall asleep faster and experience deeper, more restorative sleep — your body's recovery mode.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES STRIP -->
+  <section class="features-strip" id="features">
+    <div class="section-wrapper">
+      <div class="features-row">
+        <div class="feature-item reveal">
+          <div class="feature-num gradient-text">01</div>
+          <h3>Structured Workouts</h3>
+          <p>Video-guided exercises curated by fitness experts — from bicep curls to deadlifts and HIIT sessions.</p>
+          <a href="workouts.html" class="link-arrow">Watch Videos →</a>
+        </div>
+        <div class="feature-divider reveal"></div>
+        <div class="feature-item reveal" style="--delay:0.1s">
+          <div class="feature-num gradient-text">02</div>
+          <h3>7-Day Diet Plans</h3>
+          <p>Complete weekly meal plans — breakfast to dinner — balancing macros, taste, and nutritional science.</p>
+          <a href="diet.html" class="link-arrow">See Plans →</a>
+        </div>
+        <div class="feature-divider reveal"></div>
+        <div class="feature-item reveal" style="--delay:0.2s">
+          <div class="feature-num gradient-text">03</div>
+          <h3>Fitness Self Sheet</h3>
+          <p>Track goals, log workouts, note diet progress, and measure stats — all saved privately in your browser.</p>
+          <a href="notes.html" class="link-arrow">Open My Sheet →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SELF SHEET PROMO BANNER -->
+  <section style="background: var(--bg2); padding: 80px 24px; position: relative; overflow: hidden;">
+    <div style="position:absolute;inset:0;background:radial-gradient(ellipse 60% 80% at 30% 50%, rgba(225,29,72,0.07), transparent 65%);pointer-events:none;"></div>
+    <div style="max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;" class="reveal">
+      <!-- Preview card -->
+      <div style="background:var(--surface);border:1px solid var(--border);border-top:2px solid var(--red);padding:32px;position:relative;">
+        <div style="position:absolute;top:-1px;left:40px;right:40px;height:2px;background:var(--grad);opacity:0.5;"></div>
+        <div style="font-family:var(--font-d);font-size:0.68rem;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:var(--red3);margin-bottom:16px;">📋 My Fitness Sheet</div>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div style="background:var(--bg2);border:1px solid var(--border);border-left:2px solid var(--red);padding:14px 16px;">
+            <div style="font-family:var(--font-d);font-size:0.82rem;font-weight:800;text-transform:uppercase;letter-spacing:0.04em;color:var(--text);margin-bottom:4px;">Week 1 — Bench Press Goals</div>
+            <div style="font-size:0.78rem;color:var(--muted);">Target: 80kg × 5. Current: 70kg × 8. Increase weight by 2.5kg next session...</div>
+            <div style="margin-top:8px;display:flex;gap:6px;">
+              <span style="font-family:var(--font-d);font-size:0.62rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--red3);background:rgba(225,29,72,0.08);border:1px solid var(--border-red);padding:1px 8px;">Goals</span>
+              <span style="font-size:0.7rem;color:var(--muted);">Today · 9:30 AM</span>
+            </div>
+          </div>
+          <div style="background:var(--bg2);border:1px solid var(--border);border-left:2px solid var(--grey);padding:14px 16px;opacity:0.7;">
+            <div style="font-family:var(--font-d);font-size:0.82rem;font-weight:800;text-transform:uppercase;letter-spacing:0.04em;color:var(--text);margin-bottom:4px;">Monday Diet Log</div>
+            <div style="font-size:0.78rem;color:var(--muted);">Masala oats for breakfast. Hit macros. Skipped afternoon snack — add fruit next time...</div>
+            <div style="margin-top:8px;display:flex;gap:6px;">
+              <span style="font-family:var(--font-d);font-size:0.62rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:var(--red3);background:rgba(225,29,72,0.08);border:1px solid var(--border-red);padding:1px 8px;">Diet Notes</span>
+              <span style="font-size:0.7rem;color:var(--muted);">Yesterday</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Text -->
+      <div>
+        <div class="section-tag">New Feature</div>
+        <h2 class="section-title" style="margin-top:16px;">Your Personal<br><span class="gradient-text">Fitness Journal</span></h2>
+        <p style="color:var(--muted);margin-bottom:24px;line-height:1.8;font-size:0.95rem;">Write and save notes on goals, workouts, nutrition, and body stats. Everything lives privately in your browser — no accounts, no cloud, just your data.</p>
+        <ul style="display:flex;flex-direction:column;gap:10px;margin-bottom:36px;">
+          <li style="display:flex;align-items:center;gap:12px;font-size:0.9rem;color:var(--text2);"><span style="color:var(--red);font-weight:800;">→</span> 5 categories: Goals, Workout Log, Diet Notes, Body Stats, General</li>
+          <li style="display:flex;align-items:center;gap:12px;font-size:0.9rem;color:var(--text2);"><span style="color:var(--red);font-weight:800;">→</span> Save unlimited drafts · Search · Edit · Delete</li>
+          <li style="display:flex;align-items:center;gap:12px;font-size:0.9rem;color:var(--text2);"><span style="color:var(--red);font-weight:800;">→</span> Export all notes as a text file</li>
+          <li style="display:flex;align-items:center;gap:12px;font-size:0.9rem;color:var(--text2);"><span style="color:var(--red);font-weight:800;">→</span> Ctrl+S to save instantly</li>
+        </ul>
+        <a href="notes.html" class="btn-primary">Open My Sheet →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner reveal">
+    <div class="cta-inner">
+      <h2>Ready to <span class="gradient-text">Transform?</span></h2>
+      <p>Your best self is one decision away. Start today — it's completely free.</p>
+      <a href="workouts.html" class="btn-primary">▶ Begin Your Journey</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span>⚡</span> FitFlow
+        <p>Your premium fitness companion.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="diet.html">Diet</a>
+        <a href="workouts.html">Workouts</a>
+        <a href="notes.html">My Sheet</a>
+        <a href="about.html">About</a>
+      </div>
+      <p class="footer-copy">© 2025 FitFlow · Made with ❤️ for a stronger world.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.163.0/build/three.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

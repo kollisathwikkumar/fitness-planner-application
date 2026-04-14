@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FitFlow Fitness Self Sheet – Write, save, and manage your personal fitness notes and goals.">
+  <title>My Fitness Sheet – FitFlow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700;1,900&family=Barlow:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+  <div class="vt-left">GOALS · PROGRESS · NOTES · LOG · TRACK · IMPROVE</div>
+  <div class="vt-right">FITFLOW · MY SHEET · PERSONAL · DATA · RECORD</div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="brand"><span class="brand-icon">⚡</span><span class="gradient-text">FitFlow</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="diet.html">Diet</a></li>
+        <li><a href="workouts.html">Workouts</a></li>
+        <li><a href="notes.html" class="active">My Sheet</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="workouts.html" class="nav-cta">Start Training</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero" style="padding-top:var(--nav-h);min-height:38vh;">
+    <div class="page-hero-badge">📋 Your Private Journal</div>
+    <h1 class="reveal">Fitness <span class="gradient-text">Self Sheet</span></h1>
+    <p class="reveal" style="--delay:0.1s">Write goals, log workouts, track diet notes, and record body stats. Saved privately in your browser.</p>
+  </section>
+
+  <!-- MAIN NOTES APP -->
+  <div class="notes-wrap" id="notes-editor-form">
+
+    <!-- SIDEBAR -->
+    <aside class="notes-sidebar reveal-left">
+      <h3>// Categories</h3>
+      <button class="cat-btn active" data-cat="all">
+        <span>📁</span> All Notes
+        <span class="cat-count">0</span>
+      </button>
+      <button class="cat-btn" data-cat="goals">
+        <span>🎯</span> Goals
+        <span class="cat-count">0</span>
+      </button>
+      <button class="cat-btn" data-cat="workout">
+        <span>💪</span> Workout Log
+        <span class="cat-count">0</span>
+      </button>
+      <button class="cat-btn" data-cat="diet">
+        <span>🥗</span> Diet Notes
+        <span class="cat-count">0</span>
+      </button>
+      <button class="cat-btn" data-cat="stats">
+        <span>📊</span> Body Stats
+        <span class="cat-count">0</span>
+      </button>
+      <button class="cat-btn" data-cat="general">
+        <span>📝</span> General
+        <span class="cat-count">0</span>
+      </button>
+
+      <div style="margin-top:32px;padding-top:20px;border-top:1px solid var(--border);">
+        <h3 style="margin-bottom:12px;">// Quick Tips</h3>
+        <p style="font-size:0.78rem;color:var(--muted);line-height:1.65;margin-bottom:10px;"><span style="color:var(--red);font-weight:700;">Ctrl+S</span> — Save note instantly</p>
+        <p style="font-size:0.78rem;color:var(--muted);line-height:1.65;margin-bottom:10px;"><span style="color:var(--red);font-weight:700;">Click draft</span> — Expand to read</p>
+        <p style="font-size:0.78rem;color:var(--muted);line-height:1.65;margin-bottom:10px;"><span style="color:var(--red);font-weight:700;">Edit</span> — Load back into editor</p>
+        <p style="font-size:0.78rem;color:var(--muted);line-height:1.65;"><span style="color:var(--red);font-weight:700;">Export</span> — Download all as .txt</p>
+      </div>
+
+      <div style="margin-top:24px;padding-top:16px;border-top:1px solid var(--border);">
+        <button id="btn-export" class="btn-clear" style="width:100%;text-align:center;justify-content:center;display:flex;align-items:center;gap:8px;">
+          ↓ Export All Notes
+        </button>
+      </div>
+
+      <!-- Sample entries prompt -->
+      <div style="margin-top:16px;">
+        <button id="btn-sample" class="btn-clear" style="width:100%;text-align:center;justify-content:center;display:flex;align-items:center;gap:8px;font-size:0.78rem;">
+          + Load Sample Entries
+        </button>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <div class="notes-main">
+
+      <!-- EDITOR -->
+      <div class="note-editor reveal" id="note-editor-section">
+        <div class="note-editor-header">
+          <h3>// New Entry</h3>
+          <div class="editor-actions">
+            <span id="char-count" style="font-size:0.75rem;color:var(--muted);font-family:var(--font-b);align-self:center;">0 chars</span>
+            <button class="btn-clear">Clear</button>
+            <button class="btn-save">Save Draft</button>
+          </div>
+        </div>
+
+        <!-- Meta row -->
+        <div class="note-meta-row">
+          <select class="note-cat-select" id="note-cat">
+            <option value="goals">🎯 Goals</option>
+            <option value="workout">💪 Workout Log</option>
+            <option value="diet">🥗 Diet Notes</option>
+            <option value="stats">📊 Body Stats</option>
+            <option value="general" selected>📝 General</option>
+          </select>
+          <input type="text" class="note-tags-input" id="note-tags" placeholder="Tags: e.g. legs, monday, protein (comma-separated)">
+        </div>
+
+        <!-- Title -->
+        <input type="text" class="note-title-input" id="note-title" placeholder="Entry Title — e.g. Week 3 Goals / Monday Leg Day">
+
+        <!-- Body -->
+        <textarea class="note-textarea" id="note-body" placeholder="Write your note here...
+
+Examples:
+• Goals: Set weekly targets, track PRs, plan progressions
+• Workout Log: Exercises, sets, reps, weight, how it felt
+• Diet Notes: What you ate, macros, how you felt, improvements
+• Body Stats: Weight, measurements, progress photos notes
+• General: Recovery, sleep, motivation, anything fitness-related"></textarea>
+      </div>
+
+      <!-- DRAFTS -->
+      <div class="reveal" style="--delay:0.1s">
+        <div class="drafts-header">
+          <h3>// Saved Drafts</h3>
+          <span class="drafts-count" id="drafts-count">0 entries</span>
+        </div>
+        <input type="search" class="drafts-search" id="drafts-search" placeholder="🔍  Search your notes...">
+        <div class="drafts-list" id="drafts-list">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span>⚡</span> FitFlow
+        <p>Your premium fitness companion.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="diet.html">Diet</a>
+        <a href="workouts.html">Workouts</a>
+        <a href="notes.html">My Sheet</a>
+        <a href="about.html">About</a>
+      </div>
+      <p class="footer-copy">© 2025 FitFlow · Made with ❤️ for a stronger world.</p>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script>
+    // Sample entries loader
+    document.getElementById('btn-sample')?.addEventListener('click', function() {
+      const STORAGE_KEY = 'fitflow_notes_v2';
+      const existing = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+      if (existing.length > 0) {
+        if (!confirm('This will add sample entries alongside your existing notes. Continue?')) return;
+      }
+      const samples = [
+        { id: 'sample1', title: 'Week 1 Strength Goals', body: 'Bench press: 80kg × 5 reps (current: 70kg × 8)\nSquat: 100kg × 3 reps (current: 90kg × 5)\nDeadlift: 120kg × 3 reps (current: 110kg × 5)\n\nFocus on progressive overload. Add 2.5kg per week where possible. Prioritise form over weight.', category: 'goals', tags: ['strength','week1','goals'], createdAt: Date.now() - 86400000*3, updatedAt: Date.now() - 86400000*3 },
+        { id: 'sample2', title: 'Monday — Chest & Triceps', body: 'Warm up: 5min treadmill + shoulder mobility\n\nBench Press: 4×8 @ 65kg ✓\nIncline DB Press: 3×10 @ 22kg ✓\nCable Flyes: 3×12 @ 15kg\nDips: 3×12 bodyweight\nTricep Pushdowns: 3×15\n\nFelt strong today. Sleep was good (8hrs). Energy levels 8/10.', category: 'workout', tags: ['chest','triceps','monday'], createdAt: Date.now() - 86400000*2, updatedAt: Date.now() - 86400000*2 },
+        { id: 'sample3', title: 'Current Body Stats', body: 'Date: Jan 2025\nWeight: 78kg\nBodyfat %: ~16% (estimate)\nChest: 102cm\nWaist: 84cm\nArms (flexed): 37cm\nLegs (mid-thigh): 58cm\n\nGoal: Get to 75kg at 12% bodyfat by April. Maintain or increase muscle mass.', category: 'stats', tags: ['measurements','progress'], createdAt: Date.now() - 86400000, updatedAt: Date.now() - 86400000 },
+        { id: 'sample4', title: 'Diet Tracking — This Week', body: 'Protein target: 160g/day\nCalories: 2400 (slight deficit)\n\nGood days: Mon, Wed, Fri — hit macros ✓\nStruggle: Evening snacking. Replace with protein shake or fruit chaat.\n\nMeal prep Sunday helped a lot. Need to prep more dal for weekdays. Tuesday poha was great — repeat!', category: 'diet', tags: ['macros','protein','weekly'], createdAt: Date.now() - 3600000, updatedAt: Date.now() - 3600000 },
+      ];
+      const merged = [...samples, ...existing];
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(merged));
+      location.reload();
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.163.0/build/three.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
